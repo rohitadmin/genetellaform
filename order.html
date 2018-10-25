@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+
+
+    
+    <title>Order</title>
+  </head>
+  <body>
+  <div class="container">
+  	<div class="mt-5"></div>
+  	<h1 class="text-center" style="text-align: center;">Orders</h1>
+    <div class="mt-5"></div>
+    	
+    		
+<form>
+  <div class="form-row">
+
+    <div class="col-md-4 mb-3">
+      <label for="byid">BY ID</label>
+      <input type="number" class="form-control"  placeholder="BY ID" name="byid" required>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <label for="byname">BY Name</label>
+      <input type="text" class="form-control" placeholder="By name" name="byname" required>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <label for="forid">for Id</label>
+      <input type="number" class="form-control" placeholder="For ID" name="forid" required> 
+    </div>
+
+  </div>
+
+
+  <div class="form-row">
+
+    <div class="col-md-4 mb-3">
+      <label for="forname">for Name</label>
+      <input type="text" class="form-control" placeholder="For Name" name="forname" required> 
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <label for="forid">Status</label>
+      <input type="text" class="form-control" placeholder="Status" name="status" required> 
+    </div>
+
+
+    <div class="col-md-4 mb-3">
+      <label for="amount">Amount</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text"><i class="fa fa-money"></i></span>
+        </div>
+        <input type="number" class="form-control"  placeholder="Amount" name="amount" aria-describedby="inputGroupPrepend2" required>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="form-row">
+
+    <div class="col-md-4 mb-3">
+      <label for="servicetype">Service Type</label>
+      <input type="text" class="form-control"  placeholder="Service Type" name="servicetype" required>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <label for="objects">Objects</label>
+      <input type="text" class="form-control" placeholder="Objects" name="objects" required>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <label for="ordertime">Order Time</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text"><i class="fa fa-clock-o"></i></span>
+        </div>
+        <input type="time" class="form-control"  name="time" aria-describedby="inputGroupPrepend2" required>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="form-row">
+
+    <div class="col-md-4 mb-3">
+      <label for="device">Device</label>
+      <input type="text" class="form-control"  placeholder="Device" name="Device" required>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <label class="mr-sm-2" for="byrating">By Rating</label>
+      <select class="custom-select mr-sm-2">
+        <option selected>Choose...</option>
+        <option value="1">1 star</option>
+        <option value="2">2 star</option>
+        <option value="3">3 star</option>
+        <option value="4">4 star</option>
+        <option value="5">5 star</option>
+      </select>
+    </div>
+
+
+    <div class="col-md-4 mb-3">
+      <label class="mr-sm-2" for="forrating">For Rating</label>
+      <select class="custom-select mr-sm-2">
+        <option selected>Choose...</option>
+        <option value="1">1 star</option>
+        <option value="2">2 star</option>
+        <option value="3">3 star</option>
+        <option value="4">4 star</option>
+        <option value="5">5 star</option>
+      </select>
+    </div>
+
+  </div>
+
+  <div class="mt-3"></div>
+
+ <div class="custom-file">
+    <input type="file" class="custom-file-input" name="image" required>
+    <label class="custom-file-label" for="image">Choose Image</label>
+ </div>
+
+ <div class="mt-3"></div>
+
+  <div class="form-group">
+
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" name="acceptance" required>
+      <label class="form-check-label" for="acceptance">
+        Agree to terms and conditions
+      </label>
+    </div>
+
+  </div>
+<div class="mt-3"></div>
+  <button class="btn btn-primary" type="submit">Submit form</button>
+</form>
+<div class="mt-3"></div>   
+
+<table id="ordertable" class="table table-responsive table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>BY ID</th>
+                <th>By Name</th>
+                <th>For Id</th>
+                <th>For Name</th>
+                <th>Status</th>
+                <th>Amount</th>
+                <th>Service Type</th>
+                <th>Objects</th>
+                <th>Order Time</th>
+                <th>Device</th>
+                <th>By Rating</th>
+                <th>For Rating</th>
+                <th>Image</th>
+                <th>Acceptance</th>
+            </tr>
+        </thead>
+ 
+        <tbody>
+            <tr>
+                <td>0000000000</td>
+                <td>abcdefghij</td>
+                <td>1234567890</td>
+                <td>abcdefghij</td>
+                <td>active</td>
+                <td>200000000</td>
+                <td>active</td>
+                <td>active</td>
+                <td>12 PM</td>
+                <td>abcdefghij</td>
+                <td>5 star</td>
+                <td>4 star</td>
+                <td>22222222</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0000000000</td>
+                <td>abcdefghij</td>
+                <td>1234567890</td>
+                <td>abcdefghij</td>
+                <td>active</td>
+                <td>200000000</td>
+                <td>active</td>
+                <td>active</td>
+                <td>12 PM</td>
+                <td>abcdefghij</td>
+                <td>5 star</td>
+                <td>4 star</td>
+                <td>22222222</td>
+                <td>0</td>
+            </tr>
+           <tr>
+                <td>0000000000</td>
+                <td>abcdefghij</td>
+                <td>1234567890</td>
+                <td>abcdefghij</td>
+                <td>active</td>
+                <td>200000000</td>
+                <td>active</td>
+                <td>active</td>
+                <td>12 PM</td>
+                <td>abcdefghij</td>
+                <td>5 star</td>
+                <td>4 star</td>
+                <td>22222222</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0000000000</td>
+                <td>abcdefghij</td>
+                <td>1234567890</td>
+                <td>abcdefghij</td>
+                <td>active</td>
+                <td>200000000</td>
+                <td>active</td>
+                <td>active</td>
+                <td>12 PM</td>
+                <td>abcdefghij</td>
+                <td>5 star</td>
+                <td>4 star</td>
+                <td>22222222</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0000000000</td>
+                <td>abcdefghij</td>
+                <td>1234567890</td>
+                <td>abcdefghij</td>
+                <td>active</td>
+                <td>200000000</td>
+                <td>active</td>
+                <td>active</td>
+                <td>12 PM</td>
+                <td>abcdefghij</td>
+                <td>5 star</td>
+                <td>4 star</td>
+                <td>22222222</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0000000000</td>
+                <td>abcdefghij</td>
+                <td>1234567890</td>
+                <td>abcdefghij</td>
+                <td>active</td>
+                <td>200000000</td>
+                <td>active</td>
+                <td>active</td>
+                <td>12 PM</td>
+                <td>abcdefghij</td>
+                <td>5 star</td>
+                <td>4 star</td>
+                <td>22222222</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+    </table>
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery.simplePagination.js"></script>
+<script>
+    $(function() {
+      $("#ordertable").simplePagination({
+        previousButtonClass: "btn btn-success",
+        nextButtonClass: "btn btn-success"
+      });
+
+
+    });
+  </script>
+    </div>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</div>
+</body>
+</html>
